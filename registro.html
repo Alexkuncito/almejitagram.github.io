@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almejitagram</title>
+</head>
+<body>
+    <header>
+        <img src="almejitagram_logo.png" alt="logo_almejitagram">
+
+        <h1>Almejitagram</h1>
+
+        <nav>
+            <ul>
+                <li> <a href="./index.html">INICIO</a> </li>
+                <li> <a href="./login.html">LOGIN</a> </li>
+                <li> <a href="./registro.html">REGISTRO</a> </li>
+                <li> <a href="./advbusqueda.html">BUSQUEDA AVANZADA</a> </li>
+            </ul>
+        </nav>
+
+        <form action="./busqueda.html">
+            <input type="search" placeholder="Buscar" name="buscar">
+        </form>
+
+        <hr>
+        
+    </header>
+
+    <main>
+        <form id="formreg">
+            <h2 class="Titulo">Registro</h2>
+
+            <p class="Reglin">
+                <label for="Usuario" class="labelreg">Usuario</label>
+                <input id="Usuario" type="text" class="inputreg" placeholder="" name="Usuario" required>
+            </p>
+
+            <p class="Reglin">
+                <label for="Contrasenya" class="labelreg">Contraseña</label>
+                <input id="Contrasenya" type="password" class="inputreg" placeholder="" name="cont" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$">
+            </p>
+
+            <ul id="listacontr">
+                <li>Debe tener como mínimo 6 caracteres.</li>
+                <li>Debe tener como mínimo 1 número.</li>
+                <li>Debe tener como mínimo 1 letra mayúscula.</li>
+                <li>Debe tener como mínimo 1 letra minúscula.</li>
+            </ul>
+
+            <p class="Reglin">
+                <label for="Contrasenya2" class="labelreg">Repetir Contraseña</label>
+                <input id="Contrasenya2" type="password" class="inputreg" placeholder="" name="rcont" required>
+            </p>
+
+            <p class="Reglin">
+                <label for="Mail" class="labelreg">Email</label>
+                <input id="Mail" type="email" class="inputreg" placeholder="" name="mail" required>
+            </p>
+
+            <p class="Reglin">
+                <label for="Sexo" class="labelreg">Sexo</label>
+                <input id="Sexo" type="text" class="inputreg" placeholder="" list="sexlist" name="Sexo" required>
+                <datalist id="sexlist">
+                    <option value="Hombre">
+                    <option value="Mujer">
+                </datalist>
+            </p>
+
+            <p class="Reglin">
+                <label for="Fnac" class="labelreg">Fecha de Nacimiento</label>
+                <input id="Fnac" type="date" class="inputreg" name="Fnac" required>
+            </p>
+
+            <p class="Reglin">
+                <label for="Pais" class="labelreg">Pais</label>
+                <input id="Pais" type="text" class="inputreg" placeholder="" list="paislist" name="Pais" required>
+                <datalist id="paislist">
+                    
+                </datalist>
+            </p>
+
+            <p class="Reglin">
+                <label for="Ciudad" class="labelreg">Ciudad</label>
+                <input id="Ciudad" type="text" class="inputreg" placeholder="" list="ciudadlist" name="Ciudad" required>
+                <datalist id="ciudadlist">
+                    
+                </datalist>
+            </p>
+
+            <input id="FotoReg" type="file" class="inputreg">
+
+
+            <input type="submit" class="botonreg" value="Registrate">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2023 - 2024 Almejitagram - All Rights Reserved</p>
+    </footer>
+    
+</body>
+</html>
